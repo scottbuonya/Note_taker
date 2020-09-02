@@ -15,3 +15,7 @@ app.get("/", function (res, req){
 app.get("/notes", function (res, req){
     res.sendFile(path.join(_dirname, "Develop\public\notes.html"))
 })
+
+app.listen(PORT, function(){
+    console.log("App listening on PORT " + PORT);
+});
