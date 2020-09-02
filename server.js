@@ -32,15 +32,9 @@ app.post("/api/notes", function(req, res){
 });
 // deletes notes
 app.delete("/api/notes/:id", function (req, res){
-   const id = req.params._id;
-   const newNote = req.body;
-   newNote.remove(id,(err, newNote) =>{
-    if(err) throw err;
-    res.json(newNote)
-   });
+  // come back for later
    
-    // req.params.id
-    // res.send("Delete request at /user")
+   
 });
 
 
